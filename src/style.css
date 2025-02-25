@@ -549,37 +549,64 @@ html {
     background-image: var(--section-background-color) !important;
     color: white !important;
   }
-  
+ /* CSS for tech icons */
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: inline-block !important; /* Use inline-block to prevent it from taking the whole row */
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+  position: relative; /* Ensure skill-name can be positioned correctly inside */
+}
+
+@media (max-width: 767px) {
   .tech-icons {
-    font-size: 4.5em !important;
-    margin: 15px !important;
-    padding: 10px !important;
-    opacity: 0.93 !important;
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-    vertical-align: middle !important;
-    text-align: center !important;
-    border-radius: 5px !important;
-    display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-    overflow: hidden !important;
-    transition: all 0.4s ease 0s !important;
+    margin: 10px !important;
   }
-  
-  @media (max-width: 767px) {
-    .tech-icons {
-      margin: 10px !important;
-    }
-  }
-  
-  .tech-icons:hover {
-    transform: scale(1.05) !important;
-    overflow: hidden !important;
-    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-  }
-  .tech-icon-images {
-    padding: 20px !important;
-    line-height: 1.6 !important;
-  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
+/* Skill name visibility on hover */
+.skill-name {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 5px; /* Adjust to make it fit better */
+  left: 50%;
+  font-size: 12px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  pointer-events: none; /* Prevent interaction with the skill name */
+}
+
+.tech-icons:hover .skill-name {
+  visibility: visible;
+  opacity: 1;
+  font-size: 14px; /* Adjust font size on hover */
+}
+
+/* Icons color transition */
+.tech-icons svg {
+  transition: color 0.3s ease-in-out;
+}
+
+.tech-icons:hover svg {
+  color: #007bff; /* Adjust color on hover */
+}
+
+
   
   .quote-card-view {
     border: none !important;
