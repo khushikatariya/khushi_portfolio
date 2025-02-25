@@ -12,7 +12,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+<Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
@@ -20,42 +20,43 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have been pursuing it since then
+              My journey in technology began with a deep curiosity for building impactful solutions, and I’ve been passionately coding ever since.
               <br />
               <br/>
               <i>
-              I am a <b className="purple"> Master's in Computer Science</b> student at <b className="purple"> University of Southern California</b>
+              I am a <b className="purple">Master's in Computer Science</b> student at <b className="purple">University of Southern California</b>, 
+              with experience in <b className="purple">Software Development, AI-driven applications, and Scalable Systems.</b>
               </i>
-
               <br/>
-              <br />I am fluent in classics like
+              <br />I am proficient in 
               <i>
-                <b className="purple"> Javascript, Python, Java </b>
+                <b className="purple"> JavaScript, Python, and Java</b>, 
               </i>
+              and have worked extensively with backend and full-stack technologies.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              I interned at <b className="purple">Amazon</b> as a **Software Development Engineer Intern**, 
+              where I worked on <b className="purple">scalable backend solutions</b> for critical systems. 
+              Currently, I am the sole engineer at <b className="purple">GreatPods</b>, a startup focused on aggregating 
+              podcast critic reviews. Here, I am building an **MVP platform**, optimizing **SEO and cross-platform performance**, 
+              and developing **AI-powered podcast recommendations**.  
+              <br />
+              <br />
+              My interests lie in developing
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Machine Learning and Artificial Intelligence
-                </b>
+                <b className="purple"> Web Technologies, Distributed Systems, and AI-powered solutions.</b>
               </i>
+              I enjoy solving complex engineering challenges and making technology more accessible.  
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              I have hands-on experience with <b className="purple">Node.js</b> and
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                <b className="purple"> Modern JavaScript Frameworks</b>
               </i>
               &nbsp; like
               <i>
                 <b className="purple"> React.js and Next.js</b>
-              </i>
+              </i>, while also leveraging cloud technologies like AWS to build scalable applications.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -81,16 +82,6 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              {/* <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li> */}
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/khushikatariya/"
@@ -116,6 +107,7 @@ function Home2() {
         </Row>
       </Container>
     </Container>
+
   );
 }
 export default Home2;
